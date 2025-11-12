@@ -1,0 +1,11 @@
+{"time":"2025-11-12T16:35:00.491630993+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpj70sed_l/port-25267.txt","pid":25267,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-11-12T16:35:00.493708467+09:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":25267}
+{"time":"2025-11-12T16:35:00.493782004+09:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-25267-25515-3183513214/socket","Net":"unix"}}
+{"time":"2025-11-12T16:35:00.568115739+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2025-11-12T16:35:00.585402648+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"cg8owe8n","id":"1(@)"}
+{"time":"2025-11-12T16:35:00.991540577+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"cg8owe8n","id":"1(@)"}
+{"time":"2025-11-12T16:35:26.240139921+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"cg8owe8n","id":"1(@)"}
+{"time":"2025-11-12T16:35:26.241126217+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"cg8owe8n","id":"1(@)"}
+{"time":"2025-11-12T16:35:26.241842638+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"075j5fun","id":"1(@)"}
+{"time":"2025-11-12T16:35:26.578385197+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"075j5fun","id":"1(@)"}
+{"time":"2025-11-12T16:38:57.959038124+09:00","level":"INFO","msg":"main: received shutdown signal","signal":15}

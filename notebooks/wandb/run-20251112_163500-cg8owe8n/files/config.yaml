@@ -1,0 +1,100 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            6emo7hoyfkxb8oztjhf2wdncyjid3zr8:
+                codePath: /sda/usama/Indivisual_Analysis/DL_Proj/notebooks/03_Model_Training_Baseline.ipynb
+                codePathLocal: 03_Model_Training_Baseline.ipynb
+                cpu_count: 24
+                cpu_count_logical: 48
+                cudaVersion: "12.1"
+                disk:
+                    /:
+                        total: "491104411648"
+                        used: "453341499392"
+                email: osama.ikram007@gmail.com
+                executable: /home/usama/anaconda3/envs/analysis/bin/python
+                gpu: NVIDIA RTX A5000
+                gpu_count: 7
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-1cba7995-dfff-48d2-a370-b4caac27f87d
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-64610f65-7703-f1ae-3ab6-225a60fbceea
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-063739a0-cac1-a46e-c070-ad35ca723c61
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-f971c781-6b10-5f66-07e6-077c33632528
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-e7e0f3ca-1064-5d5a-3326-6753d012110b
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-17a11b3e-cee4-d1b3-0f8e-329639ac812b
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-8dd7209b-bbe1-afc5-512d-edf1eb881203
+                host: gpusystem
+                memory:
+                    total: "134783324160"
+                os: Linux-4.15.0-213-generic-x86_64-with-glibc2.27
+                program: /sda/usama/Indivisual_Analysis/DL_Proj/notebooks/03_Model_Training_Baseline.ipynb
+                python: CPython 3.12.9
+                root: /sda/usama/Indivisual_Analysis/DL_Proj/notebooks
+                startedAt: "2025-11-12T07:35:00.330504Z"
+                writerId: 6emo7hoyfkxb8oztjhf2wdncyjid3zr8
+        m: []
+        python_version: 3.12.9
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 49
+                - 53
+                - 63
+                - 80
+            "2":
+                - 1
+                - 5
+                - 41
+                - 49
+                - 53
+                - 63
+                - 80
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.12.9
+            "5": 0.22.3
+            "8":
+                - 1
+            "12": 0.22.3
+            "13": linux-x86_64
+architecture:
+    value: resnet50
+batch_size:
+    value: 32
+epochs:
+    value: 50
+learning_rate:
+    value: 0.0001

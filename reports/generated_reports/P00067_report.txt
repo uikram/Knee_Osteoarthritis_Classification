@@ -1,0 +1,39 @@
+
+KNEE OSTEOARTHRITIS ASSESSMENT REPORT
+Generated: 2025-11-12 17:11:38
+Report Type: AI-Assisted Preliminary Analysis
+
+============================================================
+
+CLINICAL IMPRESSION:
+The AI model has classified this knee X-ray as Kellgren-Lawrence Grade 4 
+with 100.0% confidence. Large osteophytes, marked narrowing of joint space, severe sclerosis and definite deformity of bone contour
+
+PROBABILITY DISTRIBUTION:
+  Grade 0: 0.0%
+  Grade 1: 0.0%
+  Grade 2: 0.0%
+  Grade 3: 0.0%
+  Grade 4: 100.0%
+
+EXPLAINABLE AI FINDINGS:
+The model's attention (Grad-CAM) highlights the following regions:
+  - Peak attention at coordinates (3, 5) with intensity 1.00
+  - 6.1% of the image shows high model attention (>0.7)
+  - Predominantly lateral compartment involvement
+
+
+RECOMMENDATIONS:
+  • Urgent orthopedic referral required
+  • Evaluate candidacy for total knee arthroplasty
+  • Aggressive pain management and functional support
+  • Short-term follow-up (1-3 months) until surgical decision
+  • Patient counseling on surgical options and outcomes
+
+LIMITATIONS:
+This is an AI-assisted preliminary assessment. Final diagnosis must be confirmed 
+by a qualified radiologist with clinical correlation. The AI model has been 
+trained on standard posteroanterior knee X-rays and may not generalize to 
+atypical presentations or imaging protocols.
+
+{'='*60}

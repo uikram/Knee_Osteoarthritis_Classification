@@ -1,0 +1,37 @@
+
+KNEE OSTEOARTHRITIS ASSESSMENT REPORT
+Generated: 2025-11-12 17:11:38
+Report Type: AI-Assisted Preliminary Analysis
+
+============================================================
+
+CLINICAL IMPRESSION:
+The AI model has classified this knee X-ray as Kellgren-Lawrence Grade 0 
+with 44.5% confidence. No radiographic features of osteoarthritis
+
+PROBABILITY DISTRIBUTION:
+  Grade 0: 44.5%
+  Grade 1: 42.8%
+  Grade 2: 12.6%
+  Grade 3: 0.1%
+  Grade 4: 0.0%
+
+EXPLAINABLE AI FINDINGS:
+The model's attention (Grad-CAM) highlights the following regions:
+  - Peak attention at coordinates (4, 1) with intensity 1.00
+  - 6.1% of the image shows high model attention (>0.7)
+  - Relatively balanced medial and lateral compartment attention
+
+
+RECOMMENDATIONS:
+  • No immediate treatment required
+  • Encourage regular physical activity and weight management
+  • Routine follow-up in 2-3 years or if symptoms develop
+
+LIMITATIONS:
+This is an AI-assisted preliminary assessment. Final diagnosis must be confirmed 
+by a qualified radiologist with clinical correlation. The AI model has been 
+trained on standard posteroanterior knee X-rays and may not generalize to 
+atypical presentations or imaging protocols.
+
+{'='*60}

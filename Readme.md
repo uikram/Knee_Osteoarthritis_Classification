@@ -1,39 +1,55 @@
-# 🦴 Knee Osteoarthritis Severity Grading with Explainable AI
+# Ensemble deep‐learning networks for automated osteoarthritis grading in knee X‐ray images
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Overview
+This repository contains the code and resources for the paper ["Ensemble deep‐learning networks for automated osteoarthritis grading in knee X‐ray images"](https://www.nature.com/articles/s41598-023-50210-4). The aim of this project is to develop an ensemble network that predicts the Kellgren-Lawrence (KL) grade for knee osteoarthritis (OA) severity using a deep learning approach.
 
-> **Deep Learning Framework for Automated Knee Osteoarthritis Severity Classification with Integrated Explainable AI and LLM-Powered Medical Reporting**
+![alt text](./image/kl_grade.png)
 
-## 🎯 Project Overview
+## Introduction
+Osteoarthritis (OA) is a common joint disease that affects millions of people worldwide. The Kellgren-Lawrence (KL) grading system is the standard for classifying the severity of knee OA using X-ray images. However, the grading depends on the clinician’s subjective assessment, leading to significant variability. This project proposes an ensemble deep learning model that provides consistent and accurate KL grade predictions.
 
-This project develops a state-of-the-art deep learning system for automated grading of knee osteoarthritis (OA) severity from X-ray images using the Kellgren-Lawrence (KL) grading scale (0-4). Unlike traditional "black-box" models, our system integrates multiple Explainable AI (XAI) techniques and Large Language Model (LLM) integration to generate human-readable diagnostic reports, making it suitable for clinical adoption.
+## Dataset
+The dataset used in this study is from the Osteoarthritis Initiative (OAI), which consists of 8260 knee X-ray images. The dataset includes images for KL grades ranging from 0 to 4. It is publicly available and can be accessed [here](https://data.mendeley.com/datasets/56rmx5bjcr/1).
 
-### 🌟 Key Features
+## Model architecture
+The ensemble network consists of several deep learning models, including:
+- DenseNet-161
+- EfficientNet-b5
+- EfficientNet-V2-s
+- RegNet-Y-8GF
+- ResNet-101
+- ResNext-50-32x4d
+- Wide-ResNet-50-2
+- ShuffleNet-V2-x2-0
 
-- **8+ Deep Learning Architectures**: ResNet, EfficientNet, Vision Transformer, ConvNeXt, Swin, DenseNet
-- **Advanced XAI Integration**: Grad-CAM, Grad-CAM++, LRP, LIME with comparative analysis
-- **LLM-Powered Reporting**: Automated medical report generation using GPT-4 API
-- **Production-Ready Web App**: Interactive Flask/Streamlit interface for clinical deployment
-- **Comprehensive Experimentation**: 15+ model variants with extensive ablation studies
-- **Clinical Validation**: Multi-metric evaluation optimized for false negative minimization
+Each model is trained with optimal image sizes to enhance performance. The models are imported from [`torchvision.models`](https://pytorch.org/vision/stable/models.html) to leverage pre-trained weights and architectures. The final prediction is made using a mix voting method, which combines hard and soft voting strategies.
 
-## 📊 Dataset
+![alt text](./image/architecture.png)
 
-**Knee Osteoarthritis Severity Grading Dataset**  
-- **Source**: Mendeley Data (Pingjun Chen, 2018)  
-- **DOI**: 10.17632/56rmx5bjcr.1  
-- **Samples**: 8,164 knee X-ray images  
-- **Classes**: 5 (KL Grades 0-4)  
-- **Distribution**: 
-  - Grade 0 (Healthy): 3,218 images
-  - Grade 1 (Doubtful): 1,476 images
-  - Grade 2 (Minimal): 2,142 images
-  - Grade 3 (Moderate): 1,079 images
-  - Grade 4 (Severe): 249 images
+## Training strategy
+The training process involves the following steps:
+1. Models are trained using different image sizes.
+2. The initial layers are frozen, and only the fully connected layers are trained with a learning rate of 0.01.
+3. Subsequently, all layers are unfrozen, and the learning rate is reduced progressively to stabilize training.
+4. Stratified five-fold cross-validation is used to handle class imbalance and improve generalization.
 
-## 🚀 Quick Start
+## Results
+The proposed ensemble network achieved:
+- Accuracy: 76.93%
+- F1 Score: 0.7665
 
-### Installation
+These results outperform existing techniques in KL grade classification. Detailed experimental results and performance metrics are provided in the [paper](https://www.nature.com/articles/s41598-023-50210-4).
 
+## Visualization
+Grad-CAM visualization is used to understand the focus areas of the model. The visualization helps in verifying that the model correctly identifies key features related to KL grading, such as joint space narrowing and osteophyte formation.
+
+![alt text](./image/cam.png)
+
+## License
+Ensemble deep‐learning networks for automated osteoarthritis grading in knee X‐ray image  
+is released under the [MIT License](LICENSE).
+
+## Citation
+```
+Chen, Pingjun (2018), “Knee Osteoarthritis Severity Grading Dataset”, Mendeley Data, V1, doi: 10.17632/56rmx5bjcr.1
+```

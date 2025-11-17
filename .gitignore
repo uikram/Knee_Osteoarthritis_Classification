@@ -1,5 +1,18 @@
-*png
-*json
-*pt
-*pth
-*jpg
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*.png
+*.txt
+.DS_Store
+
+# Dataset / Models / Submissions
+OAI-KL/KneeXray
+OAI-KL/models
+OAI-KL/submission
+
+OAI-KL/Grad CAM
+OAI-KL/Ensemble Network Box Plot
+OAI-KL/Score txt
+OAI-KL/Final Result
+
+OAI-KL/HealthHub FT

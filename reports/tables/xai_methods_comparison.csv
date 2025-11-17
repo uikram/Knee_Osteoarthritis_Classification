@@ -1,5 +1,0 @@
-Method,Type,Speed,Precision,Interpretability,Use Case
-Grad-CAM,Gradient-based,Fast,Medium,High,Quick visualization
-Grad-CAM++,Gradient-based,Fast,High,High,Detailed localization
-Layer-CAM,Gradient-based,Fast,High,High,Fine-grained attention
-LIME,Perturbation-based,Slow,High,Very High,Feature importance

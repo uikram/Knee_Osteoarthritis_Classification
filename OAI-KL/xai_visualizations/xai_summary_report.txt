@@ -1,0 +1,34 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║           EXPLAINABLE AI ANALYSIS SUMMARY                     ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📊 Analysis Statistics:
+   • Total Visualizations: 200
+   • Models Analyzed: 8
+   • Samples per Class: 5
+   • Output Directory: ./xai_visualizations
+
+🔬 XAI Methods Applied:
+   ✓ Grad-CAM: Highlights regions important for classification
+   ✓ Grad-CAM++: Improved localization over Grad-CAM
+   ✓ LIME: Shows superpixels supporting/opposing predictions
+
+📖 Interpretation Guide:
+   • Grad-CAM: Warmer colors (red/yellow) = higher importance
+   • LIME Green: Supports the prediction
+   • LIME Red: Opposes the prediction
+
+🎯 Clinical Relevance:
+   1. Verify model focuses on anatomically relevant regions
+   2. Check for attention to joint space, bone margins
+   3. Identify potential spurious correlations
+   4. Compare explanations across severity levels
+
+📋 Next Steps:
+   1. Review visualizations for clinical validity
+   2. Consult with radiologists on attention patterns
+   3. Identify and address any biases or artifacts
+   4. Document findings for model validation
+
+╚═══════════════════════════════════════════════════════════════╝

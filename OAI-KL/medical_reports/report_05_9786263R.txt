@@ -1,0 +1,26 @@
+KNEE OSTEOARTHRITIS AI CLASSIFICATION REPORT
+================================================================================
+
+Patient Case ID: 9786263R.png
+Ground Truth: Grade 2
+AI Prediction: Grade 0 (Confidence: 42.7%)
+
+Model: densenet_161
+Fold: 1
+
+================================================================================
+
+❌ Error generating report: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Please check your API key and internet connection.
+
+================================================================================
+TECHNICAL DETAILS
+================================================================================
+Attention Coverage: 25.0%
+Mean Activation: 0.174
+Max Activation: 1.000
+
+Top Attention Regions:
+  - Lower Lateral: 0.302
+  - Lower Medial: 0.265

@@ -59,9 +59,3 @@ To ensure clinical trust, we employ **Grad-CAM** and **LIME** to generate visual
 * Torchvision
 * Scikit-learn
 * Lime
-
-### Installation
-```bash
-git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
-cd your-repo
-pip install -r requirements.txt

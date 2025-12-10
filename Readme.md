@@ -38,9 +38,3 @@ The proposed ensemble network achieved:
 
 ## Visualization
 Grad-CAM and LIME visualization are used to understand the focus areas of the model. The visualization helps in verifying that the model correctly identifies key features related to KL grading, such as joint space narrowing and osteophyte formation.
-
-
-## Citation
-```
-Chen, Pingjun (2018), “Knee Osteoarthritis Severity Grading Dataset”, Mendeley Data, V1, doi: 10.17632/56rmx5bjcr.1
-```

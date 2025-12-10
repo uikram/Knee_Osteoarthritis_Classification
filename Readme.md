@@ -5,8 +5,6 @@
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-orange)](https://pytorch.org/)
 
 ## 📝 Overview
-This repository contains the official PyTorch implementation for the paper **"Ensemble deep‐learning networks for automated osteoarthritis grading in knee X‐ray images"**. 
-
 Osteoarthritis (OA) is a degenerative joint disease affecting millions worldwide. The **Kellgren-Lawrence (KL) grading system** is the gold standard for diagnosing severity, yet manual grading suffers from high inter-observer variability. This project introduces a robust **Ensemble Deep Learning Framework** capable of automating KL grading with high accuracy and consistency, bridging the gap between "black box" AI and clinical interpretability.
 
 ## 🌟 Key Features

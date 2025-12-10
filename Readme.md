@@ -1,6 +1,5 @@
 # Ensemble Deep‐Learning Networks for Automated Knee Osteoarthritis Grading
 
-[![Paper](https://img.shields.io/badge/Paper-Nature%20Scientific%20Reports-green)](https://www.nature.com/articles/s41598-023-50210-4)
 [![Dataset](https://img.shields.io/badge/Dataset-Mendeley%20Data-blue)](https://data.mendeley.com/datasets/56rmx5bjcr/1)
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-orange)](https://pytorch.org/)
 
